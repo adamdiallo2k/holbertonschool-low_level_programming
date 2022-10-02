@@ -1,0 +1,2 @@
+#!/bin/bash
+gcc -S $CFILE | touch cisfun | chmod +x cisfun
