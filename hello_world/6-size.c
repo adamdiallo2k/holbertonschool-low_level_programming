@@ -16,10 +16,10 @@ int main(void)
 	float unfloat = 12.5;
 	long long int deuxlong = 124;
 
-	printf("size of a char : %c byte(s)\n", sizeof(y)),
+	printf("size of a char : %d byte(s)\n", sizeof(y)),
 	printf("size of a int : %i byte(s)\n", sizeof(x)),
 	printf("size of a long : %Lf byte(s)\n", sizeof(unlong)),
 	printf("size of a long long int : %lli byte(s)\n", sizeof(deuxlong)),
-	printf("size of a float : %e byte(s)\n", sizeof(unfloat));	
-	return (0);
+	printf("size of a float : %f byte(s)\n", sizeof(unfloat));	
+return (0);
 }
