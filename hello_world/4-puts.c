@@ -9,6 +9,6 @@ int main(void)
 {
 char greetings[]="Programming is like building a multilingual puzzle";
 	 
-	puts(greetings,0);
+	puts(greetings);
 return (0);
 }
