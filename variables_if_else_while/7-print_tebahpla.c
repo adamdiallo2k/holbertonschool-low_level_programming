@@ -8,9 +8,12 @@
 * Description: 'the program's description'
 * Return: Always 0 (Success)
 */
+
 int main(void)
 {
-	for (int x = 122; x >= 97; x--)
+	int x;
+
+	for (x = 122; x >= 97; x--)
 {
 	putchar(tolower(x));
 }
