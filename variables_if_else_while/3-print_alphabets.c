@@ -12,7 +12,7 @@
 int main(void)
 {
 
-	int x,y;
+	int x, y;
 
 for (x = 'a'; x <= 'z'; x++)
 {
