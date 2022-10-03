@@ -12,7 +12,7 @@
 int main(void)
 {
 
-	int x;
+	int x,y;
 
 for (x = 'a'; x <= 'z'; x++)
 {
@@ -21,7 +21,7 @@ for (x = 'a'; x <= 'z'; x++)
 
 	if (x == 'z')
 	{
-		for (int y = 'a'; y <= 'z'; y++)
+		for (y = 'a'; y <= 'z'; y++)
 	{
 		putchar(toupper(y));
 	}
