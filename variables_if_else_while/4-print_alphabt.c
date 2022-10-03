@@ -15,7 +15,7 @@ char x;
 char y;
 for (x = 'a'; x <= 'z'; x++)
 {
-	if (x == 'q' | x == 'e')
+	if ((x == 'q') | (x == 'e'))
 	{
 	y++;
 	}
