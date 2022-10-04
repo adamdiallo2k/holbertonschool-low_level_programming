@@ -1,6 +1,6 @@
 #include "main.h"
 /**
-* main - Entry point
+* main - Entry pointddscxds
 * Description: 'the program's description'
 * Return: Always 0 (Success)
 */
@@ -16,7 +16,7 @@ for (i = 0 ; i < arrayLength ; i++)
 {
 	_putchar(output[i]);
 }
-_putchar('\n');
+	_putchar('\n');
 
 
 return (0);
