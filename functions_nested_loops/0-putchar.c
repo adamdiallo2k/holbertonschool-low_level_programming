@@ -11,6 +11,7 @@ int main(void)
 char output[]  = "_putchar";
 int i;
 int arrayLength = 8;
+
 for (i = 0 ; i < arrayLength ; i++)
 {
 	_putchar(output[i]);
