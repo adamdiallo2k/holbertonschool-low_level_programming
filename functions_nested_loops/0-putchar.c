@@ -15,7 +15,8 @@ for (i = 0 ; i < arrayLength ; i++)
 {
 	_putchar(output[i]);
 }
-	
+_putchar('\n');
+
 
 return (0);
 }
