@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
-* _islower - Entry pointddscxds
+* _isalpha - Entry pointddscxds
 * Description: 'the program's description'
 * Return: Always 0 (Success)
 * @c: int parameter
