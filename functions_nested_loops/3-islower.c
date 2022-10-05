@@ -1,20 +1,21 @@
 #include "main.h"
 
 /**
-* print_alphabet - Entry pointddscxds
+* _islower - Entry pointddscxds
 * Description: 'the program's description'
 * Return: Always 0 (Success)
+* @c: int parameter
 */
 
 int _islower(int c)
 {
 
 
-if ( c >= 'a' && c <= 'z')
+if (c >= 'a' && c <= 'z')
 {
 	return (1);
 }
-else 
+else
 {
 	return (0);
 }
