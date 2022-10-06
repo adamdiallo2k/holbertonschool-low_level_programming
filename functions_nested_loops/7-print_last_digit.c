@@ -32,9 +32,11 @@ int print_last_digit(int n)
 	if (n < 0)
 	{
 	lastdigit = n % 10;
-	 c = lastdigit * -1 + '0';
-        _putchar(c);
-	return(valeuretour);
+	 lastdigit = lastdigit * -1 + '0';
+        _putchar(lastdigit);
+	 lastdigit = lastdigit * -1 + 0;
+	return(lastdigit);
+
 	}
 	else
 	{
@@ -42,7 +44,8 @@ int print_last_digit(int n)
 	valeuretour = lastdigit;
 	lastdigit = lastdigit + '0';
 	_putchar(lastdigit);
+	return(valeuretour);
 	}
-        return(valeuretour);
+        
 }
 
