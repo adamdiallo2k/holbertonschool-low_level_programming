@@ -16,21 +16,19 @@ int print_last_digit(int n)
 
 	if (n < 0)
 	{
-	lastdigit = (( n % -10) * -1);
+	lastdigit = ((n % -10) * -1);
 	l = lastdigit;
 	lastdigit = lastdigit + '0';
 	_putchar(lastdigit);
-	return(l);
-
+	return (l);
 	}
 	else
 	{
-        lastdigit = (n % 10);
+	lastdigit = (n % 10);
 	l = lastdigit;
 	lastdigit = lastdigit + '0';
 	_putchar(lastdigit);
-	return(l);
+	return (l);
 	}
-        
 }
 
