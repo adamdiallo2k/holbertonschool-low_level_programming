@@ -28,7 +28,7 @@ int print_last_digit(int n)
 {
 	int lastdigit;
 	int valeuretour;
-	char c;
+	
 	if (n < 0)
 	{
 	lastdigit = n % 10;
