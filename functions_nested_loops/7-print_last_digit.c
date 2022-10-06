@@ -26,10 +26,11 @@ return (0);
 
 int print_last_digit(int n)
 {
+	int lastdigit;
 	int valeuretour;
 	if (n < 0)
 	{
-	int lastdigit = _abs(n) % 10;
+	lastdigit = _abs(n) % 10;
 	valeuretour = lastdigit;
         lastdigit = lastdigit * '1';
         _putchar(lastdigit);
@@ -37,7 +38,7 @@ int print_last_digit(int n)
 	}
 	else
 	{
-        int lastdigit = _abs(n) % 10;
+        lastdigit = _abs(n) % 10;
 	valeuretour = lastdigit;
 	lastdigit = lastdigit + '0';
 	_putchar(lastdigit);
