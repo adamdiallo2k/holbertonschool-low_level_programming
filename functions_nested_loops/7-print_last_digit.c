@@ -28,8 +28,9 @@ int print_last_digit(int n)
 {
 
         int lastdigit = _abs(n) % 10;
+	int valeuretour = lastdigit;
 	lastdigit = lastdigit + '0';
 	_putchar(lastdigit);
-        return(lastdigit);
+        return(valeuretou);
 }
 
