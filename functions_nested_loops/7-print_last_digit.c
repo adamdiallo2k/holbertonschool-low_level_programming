@@ -28,12 +28,12 @@ int print_last_digit(int n)
 {
 	int lastdigit;
 	int valeuretour;
+	char c;
 	if (n < 0)
 	{
-	lastdigit = _abs(n) % 10;
-	valeuretour = lastdigit;
-        lastdigit = lastdigit * '1';
-        _putchar(lastdigit);
+	lastdigit = n % 10;
+	 c = lastdigit * -1 + '0';
+        _putchar(c);
 	return(valeuretour);
 	}
 	else
