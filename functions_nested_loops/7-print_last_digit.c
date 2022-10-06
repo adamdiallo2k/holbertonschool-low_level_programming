@@ -26,11 +26,22 @@ return (0);
 
 int print_last_digit(int n)
 {
+	int valeuretour;
+	if (n < 0)
+	{
+	int lastdigit = _abs(n) % -10;
+	valeuretour = lastdigit;
+        lastdigit = lastdigit + '0';
+        _putchar(lastdigit);
 
+	}
+	else
+	{
         int lastdigit = _abs(n) % 10;
-	int valeuretour = lastdigit;
+	valeuretour = lastdigit;
 	lastdigit = lastdigit + '0';
 	_putchar(lastdigit);
+	}
         return(valeuretour);
 }
 
