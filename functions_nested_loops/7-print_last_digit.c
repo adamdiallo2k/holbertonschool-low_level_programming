@@ -29,7 +29,7 @@ int print_last_digit(int n)
 	int valeuretour;
 	if (n < 0)
 	{
-	int lastdigit = _abs(n) % -10;
+	int lastdigit = _abs(n) % 10;
 	valeuretour = lastdigit;
         lastdigit = lastdigit * '1';
         _putchar(lastdigit);
