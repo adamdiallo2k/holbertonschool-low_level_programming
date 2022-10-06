@@ -6,45 +6,30 @@
 * Return: Always 0 (Success)
 * @n: int parameter
 */
-int _abs(int c)
-{
 
-
-if (c < 0)
-{
-        c = c * -1;
-        return (c);
-}
-else
-{
-        return (c);
-}
-return (0);
-
-}
 
 
 int print_last_digit(int n)
 {
-	int lastdigit;
-	int valeuretour;
-	
+	int lastdigit = 0;
+	int l;
+
 	if (n < 0)
 	{
-	lastdigit = n % 10;
-	 lastdigit = lastdigit * -1 + '0';
-        _putchar(lastdigit);
-	 lastdigit = lastdigit * -1 + 0;
-	return(lastdigit);
+	lastdigit = (( n % -10) * -1);
+	l = lastdigit;
+	lastdigit = lastdigit + '0';
+	_putchar(lastdigit);
+	return(l);
 
 	}
 	else
 	{
-        lastdigit = _abs(n) % 10;
-	valeuretour = lastdigit;
+        lastdigit = (n % 10);
+	l = lastdigit;
 	lastdigit = lastdigit + '0';
 	_putchar(lastdigit);
-	return(valeuretour);
+	return(l);
 	}
         
 }
