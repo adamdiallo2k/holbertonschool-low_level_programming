@@ -31,9 +31,9 @@ int print_last_digit(int n)
 	{
 	int lastdigit = _abs(n) % -10;
 	valeuretour = lastdigit;
-        lastdigit = lastdigit + '0';
+        lastdigit = lastdigit * '1';
         _putchar(lastdigit);
-
+	return(valeuretour);
 	}
 	else
 	{
