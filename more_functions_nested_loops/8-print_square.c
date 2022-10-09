@@ -11,20 +11,21 @@ void print_square(int size)
 {
 int i;
 int y;
+int s = size;
 for (y = 0 ; y < size; y++)
 {
 if (size <= 0)
 {
-_putchar('\n');
+	_putchar('\n');
 }
-else
+else if (size > 0)
 {
 for (i = 0; i < size; i++)
 {
 	_putchar(35);
+}	
 }
-_putchar('\n');
-}
+	_putchar('\n');
 }
 }
 
