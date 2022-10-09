@@ -17,7 +17,7 @@ for (i = 0; i < n; i++)
 	{
 	_putchar(' ');
 	}
-	_putchar(47);
+	_putchar(92);
 
 	_putchar('\n');
 }
