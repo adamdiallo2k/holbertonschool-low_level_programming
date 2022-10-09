@@ -1,6 +1,6 @@
 #include "main.h"
 /**
-* print_most_numbers - Entry pointddscxds
+* more_numbers - Entry pointddscxds
 * Description: 'the program's description'
 * Return: Always 0 (Success)
 */
@@ -16,7 +16,7 @@ for (i = 0; i <= 9; i++)
 {
 	for (y = 0; y <= 14; y++)
 	{
-	
+
 	lastdigit = y;
 	x = y;
 	while (x >= 10)
@@ -25,15 +25,10 @@ for (i = 0; i <= 9; i++)
 	}
 	firstDigit = x;
 	_putchar(firstDigit + '0');
-	if(y > 9)
+	if (y > 9)
 	{
 	_putchar((lastdigit % 10) + '0');
 	}
-	
-	
-	
-	
-
 	}
 	_putchar('\n');
 }
