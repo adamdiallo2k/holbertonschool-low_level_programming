@@ -18,8 +18,7 @@ for (tablen = 0 ; tablen <= 10 ; tablen++)
 	printf("%d", result);
 	if (n != 9)
 	{
-	printf(",");
-	printf(" ");
+	printf(", ");
 	}
 	}
 	printf("\n");
