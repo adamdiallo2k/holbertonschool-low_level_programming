@@ -15,7 +15,7 @@ for (tablen = 0 ; tablen <= 10 ; tablen++)
 	for (n = 0; n < 10; n++)
 	{
 	result = tablen * n;
-	printf(" %d ", result);
+	printf("%d", result);
 	if (n != 9)
 	{
 	printf(",");
