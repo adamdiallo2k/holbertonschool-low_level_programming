@@ -12,12 +12,11 @@ int firstDigit;
 int y;
 int lastdigit;
 int x;
-for (i = 0; i <= 14; i++)
+for (i = 0; i <= 9; i++)
 {
 	for (y = 0; y <= 14; y++)
 	{
-	if (y > 9)
-	{
+	
 	lastdigit = y;
 	x = y;
 	while (x >= 10)
@@ -26,12 +25,14 @@ for (i = 0; i <= 14; i++)
 	}
 	firstDigit = x;
 	_putchar(firstDigit + '0');
+	if(y > 9)
+	{
 	_putchar((lastdigit % 10) + '0');
 	}
-	else if (y <= 9)
-	{
-	_putchar(y + '0');
-	}
+	
+	
+	
+	
 
 	}
 	_putchar('\n');
