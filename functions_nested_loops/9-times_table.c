@@ -20,7 +20,6 @@ for (tablen = 0 ; tablen <= 10 ; tablen++)
 	{
 	printf(",");
 	printf(" ");
-	printf(" ");
 	}
 	}
 	printf("\n");
