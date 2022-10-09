@@ -10,7 +10,7 @@ void times_table(void)
 int tablen;
 int n;
 int result;
-for (tablen = 0 ; tablen <= 10 ; tablen++)
+for (tablen = 0 ; tablen <= 9 ; tablen++)
 {
 	for (n = 0; n < 10; n++)
 	{
@@ -18,7 +18,7 @@ for (tablen = 0 ; tablen <= 10 ; tablen++)
 	printf("%d", result);
 	if (n != 9)
 	{
-	printf(",");
+	printf(", ");
 	}
 	}
 	printf("\n");
