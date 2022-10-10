@@ -9,6 +9,7 @@ void print_rev(char *s)
 {
 	int count = 0;
 	int lenght;
+
 	while (s[count] != '\0')
 	{
 	count++;
@@ -18,5 +19,5 @@ void print_rev(char *s)
 	{
 	_putchar(s[lenght]);
 	}
-	
+	_putchar('\n');
 }
