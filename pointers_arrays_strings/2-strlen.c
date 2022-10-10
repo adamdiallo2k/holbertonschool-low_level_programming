@@ -1,6 +1,6 @@
 #include "main.h"
 /**
-* strlen - Entrypoint
+* _strlen - Entrypoint
 * Descritption: 'program to '
 * Return: Always 0.
 * @s: char parameter
