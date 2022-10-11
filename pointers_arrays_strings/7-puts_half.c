@@ -15,11 +15,21 @@ void puts_half(char *str)
 	{
 	count++;
 	}
+	if (count % 2 == 1)
+	{
+	for (n = (count - 1) / 2 ; n <= (count - 1) ; n++)
+        {
+        _putchar(str[n]);
+        }
+	}
+	else
+	{
+	
 
 	for (n = (count) / 2 ; n <= (count - 1) ; n++)
 	{
 	_putchar(str[n]);
 	}
-
+	}
 	_putchar('\n');
 }
