@@ -17,6 +17,7 @@ void rev_string(char *s)
 	count++;
 	}
 	int count2 = 0;
+
 	for (lenght = count - 1; lenght >= 0; lenght--)
 	{
 	s[count2] = d[lenght];
