@@ -1,4 +1,5 @@
 #include <stdio.h>
+
 void reverse_array(int *, int);
 
 /**
@@ -35,7 +36,7 @@ int main(void)
 	};
 
 	print_array(a, sizeof(a) / sizeof(int));
-	reverse_array(a, 5);
+	reverse_array(a, sizeof(a) / sizeof(int));
 	print_array(a, sizeof(a) / sizeof(int));
 	return (0);
 }

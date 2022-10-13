@@ -18,10 +18,11 @@ count++;
 }
 
 
+
 if (n > 0)
 {
 i = n - 1;
-while (i >= 0)
+while (i >= 0 )
 {
 
 if (i != (n - 1))
@@ -33,5 +34,6 @@ printf("%d", a[i]);
 i--;
 }
 }
+printf("\n");
 
 }
