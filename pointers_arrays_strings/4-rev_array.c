@@ -1,6 +1,4 @@
-#include "main.h"
 #include <stdio.h>
-
 /**
  * reverse_array - print an array of integers
  * @a: an array of integers
@@ -13,12 +11,14 @@ void reverse_array(int *a, int n)
 
 int i;
 int count = 0;
-while( a[count] != '\0')
+int vartest;
+while (a[count] != '\0')
 {
 count++;
 }
 
-if (count == n)
+
+if (n > 0)
 {
 i = n - 1;
 while (i >= 0)

@@ -1,17 +1,42 @@
-#include <unistd.h>
+#include <stdio.h>
 
-void reset_to_98(int *n);
-int _putchar(char c);
-void swap_int(int *a, int *b);
-int _strlen(char *s);
-void _puts(char *str);
-void rev_string(char *s);
-void puts2(char *str);
-void puts_half(char *str);
-void print_array(int *a, int n);
-char *_strcpy(char *dest, char *src);
-char *_strcat(char *dest, char *src);
-char *_strncat(char *dest, char *src, int n);
-char *_strncpy(char *dest, char *src, int n);
-int _strcmp(char *s1, char *s2);
-void reverse_array(int *a, int n);
+void reverse_array(int *, int);
+
+/**
+ * print_array - Print an array of int
+ *
+ * @a: an array of integers
+ * @n: the number of elements in @a
+ */
+void print_array(int *a, int n)
+{
+	int i;
+
+	i = 0;
+	while (i < n)
+	{
+		if (i != 0)
+			printf(", ");
+		printf("%d", a[i]);
+		i++;
+	}
+	printf("\n");
+}
+
+/**
+ * main - check the code for Holberton School students.
+ *
+ * Return: Always 0.
+ */
+int main(void)
+{
+	int a[] = {
+		234234, 64534, 77632, 8723451, 98987, 1345231, 98534597,
+		23456789, 6235456, 41235416, 374578, 10435434, 89734567
+	};
+
+	print_array(a, sizeof(a) / sizeof(int));
+	reverse_array(a, sizeof(a) / sizeof(int));
+	print_array(a, sizeof(a) / sizeof(int));
+	return (0);
+}
