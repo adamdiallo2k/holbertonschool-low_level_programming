@@ -12,10 +12,6 @@ int count = 0;
 while (c[count] != '\0')
 {
 
-if (c[count] == '\t')
-{
-c[count] = ' ';
-}
 
 	if ((c[count - 1] == ' ' || c[count - 1] == '\n') &&
 	(c[count] >= 'a' && c[count] <= 'z'))
