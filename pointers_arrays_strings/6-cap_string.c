@@ -17,17 +17,16 @@ if (c[count] >= 'a' && c[count] <= 'z')
 
 while (c[count] != '\0')
 {
-	if ((c[count - 1] == '!' || c[count - 1] == '\n' || c[count - 1] == '.'
-	|| c[count - 1] == ';' || c[count - 1] == '?' || c[count - 1] == '"'
-	|| c[count - 1] == '(' || c[count - 1] == ')' || c[count - 1] == '{'
-	|| c[count - 1] == '}' || c[count - 1] == 9 || c[count - 1] == ' ') &&
-	(c[count] >= 'a' && c[count] <= 'z'))
+
+	if ((c[count - 1] == ' ' || c[count - 1] == '\n' || c[count - 1] == '.'
+	|| c[count - 1] == '!' || c[count - 1] == ';' || c[count - 1] == '('
+	|| c[count - 1] == ')' || c[count - 1] == '{' || c[count - 1] == '}'
+	|| c[count - 1] == 9 || c[count - 1] == '?' || c[count - 1] == '"')
+	&& (c[count] >= 'a' && c[count] <= 'z'))
 
 	{
 		c[count] = c[count] - 32;
 	}
-
-
 
 	count++;
 	}
