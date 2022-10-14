@@ -19,7 +19,8 @@ while (c[count] != '\0')
 {
 
 
-	if ((c[count - 1] == ' ' || c[count - 1] == '\n') &&
+
+	if ((c[count - 1] == ' ' || c[count - 1] == '\n' || c[count - 1] == '.')   &&
 	(c[count] >= 'a' && c[count] <= 'z'))
 
 	{
