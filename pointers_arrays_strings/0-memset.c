@@ -14,15 +14,11 @@ char *_memset(char *s, char b, unsigned int n)
 
 	while (i < n)
 	{
-		if (i % 10)
-		{
-			printf(" ");
-		}
 
 		s[i] = b;
 		i++;
 	}
-	printf("\n");
+
 
 	return (s);
 }
