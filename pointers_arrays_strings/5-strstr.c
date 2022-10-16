@@ -14,7 +14,6 @@ char *_strstr(char *haystack, char *needle)
 {
 	unsigned int i = 0;
 	unsigned int y = 0;
-	unsigned int reponse = 1;
 	char *b = NULL;
 
 	while (i == 0)
