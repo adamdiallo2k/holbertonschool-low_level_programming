@@ -18,7 +18,7 @@ int _pow_recursion(int x, int i)
 	else if (x < (i * i))
 	return (-1);
 
-	return(0);
+	return (0);
 }
 
 /**
