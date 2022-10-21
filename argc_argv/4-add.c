@@ -13,8 +13,7 @@ int main(int argc, char *argv[])
 {
 int i;
 int somme;
-int j = 0;
-int z;
+int j;
 for (i = 1; i < argc; i++)
 	{
 
