@@ -8,7 +8,7 @@
 * @argv: char parameter
 */
 
-int main(__attribute__((unused)) int argc,  char *argv[])
+void main(__attribute__((unused)) int argc,  char *argv[])
 {
 	printf("%s\n", argv[0]);
 
