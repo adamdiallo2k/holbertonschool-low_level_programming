@@ -41,6 +41,12 @@ char *_strdup(char *str)
 	{
 		st2[i] = str[i];
 	}
-	return (st2);
 	}
+	else
+	{
+	return (NULL);
+	}
+
+	return (st2);
 }
+
