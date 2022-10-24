@@ -19,6 +19,11 @@ char *str_concat(char *s1, char *s2)
 	int count = 0;
 	int count2 = 0;
 
+	if (s1 == NULL)
+		s1 = " ";
+
+	if (s2 == NULL)
+		s2 = " ";
 	while (s2[count] != '\0')
 	{
 		count++;
@@ -28,12 +33,6 @@ char *str_concat(char *s1, char *s2)
 	{
 		count2++;
 	}
-
-	if (s1 == NULL)
-		s1[count - 1] = 32;
-
-	if (s2 == NULL)
-		s2[count2 - 1] = 32;
 
 	size = count + count2;
 	s3 = malloc(sizeof(char) * size + 1);
