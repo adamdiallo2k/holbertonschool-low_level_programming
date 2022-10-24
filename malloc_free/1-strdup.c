@@ -30,7 +30,7 @@ char *_strdup(char *str)
 
 	for (i = 0; i < size; i++)
 		st2[i] = str[i];
-
+	st2[i] = '\0';
 
 
 
