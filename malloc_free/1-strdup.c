@@ -1,22 +1,6 @@
 #include <stdlib.h>
 #include <stdio.h>
-/**
-* _strlen - Entry point
-* Description: 'Return the lenght of a pointer'
-* Return: count
-* @s: char parameter
-*/
 
-int _strlen(char *s)
-{
-	int count = 0;
-
-	while (s[count] != '\0')
-{
-	count++;
-}
-	return (count);
-}
 
 /**
 * _strdup - Entry point
@@ -28,23 +12,29 @@ char *_strdup(char *str)
 {
 	int i;
 	char *st2;
-	int size = _strlen(str);
+	int size = 0;
 
 	if (str == NULL)
-		st2 = NULL;
+		return (NULL);
 
-	else
+	while (str[i] != '\0')
 	{
-		st2 = malloc(sizeof(char) * size + 1);
-
-		if (st2 == NULL)
-			return (NULL);
-
-		for (i = 0; i < size; i++)
-			st2[i] = str[i];
-
-
+		size++;
 	}
+
+
+
+	st2 = malloc(sizeof(char) * (size + 1));
+
+	if (st2 == NULL)
+		return (NULL);
+
+	for (i = 0; i < size; i++)
+		st2[i] = str[i];
+
+
+
+
 	return (st2);
 }
 
