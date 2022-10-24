@@ -30,23 +30,18 @@ char *_strdup(char *str)
 	char *st2;
 	int size = _strlen(str);
 
-	if (size >= 0 && str != NULL)
+	if (str == NULL)
+		return (NULL);
+
+	else
 	{
 		st2 = malloc(sizeof(char) * size);
 
-	if (st2 == NULL)
-		return (NULL);
-
-	for (i = 0; i < size; i++)
-	{
+	for (i = 0; i <= size; i++)
 		st2[i] = str[i];
-	}
-	}
-	else
-	{
-	st2 = NULL;
-	}
 
+
+	}
 	return (st2);
 }
 
