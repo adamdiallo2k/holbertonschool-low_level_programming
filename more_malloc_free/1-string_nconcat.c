@@ -20,6 +20,12 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	unsigned int y;
 	unsigned int count = 0;
 
+	if (s1 == NULL)
+		s1 = "";
+
+	if (s2 == NULL)
+		s2 = "";
+
 	while (s2[count2] != '\0')
 		count2++;
 
