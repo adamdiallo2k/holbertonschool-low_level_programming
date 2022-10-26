@@ -70,7 +70,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	char *s4;
 	unsigned int count2 = 0;
 	unsigned int size;
-	unsigned int size2;
+	unsigned int size2 = 0;
 	unsigned int i = 0;
 
 	while (s1[count] != '\0')
