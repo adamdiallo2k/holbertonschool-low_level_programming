@@ -16,8 +16,8 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 
 	char *s3 = NULL;
 	unsigned int count2 = 0;
-	unsigned int i = 0;
-	unsigned int y = 0;
+	unsigned int i;
+	unsigned int y;
 	unsigned int count = 0;
 
 	while (s2[count2] != '\0')
@@ -44,7 +44,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		s3[i] = s2[y];
 		i++;
 	}
-
+	s3[i] = '\0';
 
 	return (s3);
 }
