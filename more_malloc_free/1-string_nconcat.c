@@ -69,7 +69,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	char *s3;
 	char *s4;
 	unsigned int count2 = 0;
-	unsigned int size;
+	unsigned int size = 0;
 	unsigned int size2 = 0;
 	unsigned int i = 0;
 
