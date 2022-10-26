@@ -65,13 +65,13 @@ char *str_concat(char *s1, char *s2)
 
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	int count = 0;
+	unsigned int count = 0;
 	char *s3;
 	char *s4;
-	int count2 = 0;
-	int size;
-	int size2;
-	int i = 0;
+	unsigned int count2 = 0;
+	unsigned int size;
+	unsigned int size2;
+	unsigned int i = 0;
 
 	while (s1[count] != '\0')
 	{
