@@ -13,15 +13,18 @@
 
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	
+
 	char *s3;
-	unsigned int count2 = 0;	
+	unsigned int count2 = 0;
 	unsigned int i = 0;
 	unsigned int y = 0;
+	 unsigned int count = 0;
 
 	while (s2[count2] != '\0')
 		count2++;
 
+	while (s1[count] != '\0')
+		count++;
 
 	if (n >= count2)
 		n = count2;
