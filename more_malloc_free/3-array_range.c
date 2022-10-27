@@ -34,7 +34,7 @@ int *array_range(int min, int max)
 	for (y = min, i = 0; y <= max; y++, i++)
 		p[i] = y;
 
-	
+
 	return (p);
 }
 
