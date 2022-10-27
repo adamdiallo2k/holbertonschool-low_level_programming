@@ -22,14 +22,14 @@ int *array_range(int min, int max)
 	if (min > max)
 		return (NULL);
 
-	for (i = minv; i < maxv; i++)
+	for (i = minv; i <= maxv; i++)
 	{
 		number++;
 	}
 
 	p = malloc(number);
 
-	for (y = 0; minv < maxv; minv++)
+	for (y = 0; minv <= maxv; minv++)
 		p[y] = minv;
 	p[y] = '\0';
 	return (p);
