@@ -31,7 +31,7 @@ int *array_range(int min, int max)
 
 	for (y = 0; minv < maxv; minv++)
 		p[y] = minv;
-
+	p[y] = '\0';
 	return (p);
 }
 
