@@ -1,8 +1,8 @@
-#ifndef DOG_H
-#define DOG_H
+#ifndef DOG_T_H
+#define DOG_T_H
 
 /**
- * struct dog - Short description
+ * struct dog_t - Short description
  * @name: First member
  * @age: Second member
  * @owner: Third member
@@ -10,12 +10,12 @@
  * Description: Define a simple struct named dog
  */
 
-struct dog_t
+typedef struct dog_t
 {
 	char *name;
 	float age;
 	char *owner;
-};
+} dog_t;
 void init_dog(struct dog_t *d, char *name, float age, char *owner);
 void print_dog(struct dog_t *d);
 #endif
