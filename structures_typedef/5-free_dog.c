@@ -4,17 +4,18 @@
 #include <string.h>
 
 /**
-* new_dog - Entry point
+* free_dog - Entry point
 * Description: 'print struct dog'
 * Return: nothing
-* @name: dog struct parameter
-* @age: dog struct parameter
-* @owner: dog struct parameter
+* @d: dog struct parameter
 */
 
 void free_dog(dog_t *d)
 {
+	if (d != NULL)
+	{
 	free(d->name);
 	free(d->owner);
 	free(d);
+	}
 }
