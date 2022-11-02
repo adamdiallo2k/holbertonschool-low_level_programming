@@ -1,17 +1,18 @@
 #include <stdio.h>
 #include "function_pointers.h"
 /**
-* print_name - Entry pointddscxds
+* array_iterator - Entry pointddscxds
 * Description: 'print a name'
 * Return: nothing
-* @name: function pointer parameter
-* @f: char parameter
+* @array: int pointer parameter
+* @size: size_t parameter
+* @action:void function parameter
 */
 
 
 void array_iterator(int *array, size_t size, void (*action)(int))
 {
-	if (action)
+	if (array != NULL && action != NULL)
 	{
 		int z = (int) size;
 		int i;
@@ -19,6 +20,6 @@ void array_iterator(int *array, size_t size, void (*action)(int))
 			d = action;
 
 		for (i = 0; i < z; i++)
-			d(array[i]);	
+			d(array[i]);
 	}
 }
