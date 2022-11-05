@@ -3,10 +3,11 @@
 #include <stdlib.h>
 #include "variadic_functions.h"
 /**
-* sum_them_all - Entry point
+* print_numbers - Entry point
 * Description: 'returns the sum of all its parameters.'
-* Return: int
-* @n: unsigned int parameter
+* Return: nothing
+* @separator: char const parameter
+* @n: const unsigned int n parameter
 */
 
 
