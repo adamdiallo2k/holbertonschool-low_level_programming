@@ -19,18 +19,17 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 	va_start(parametersInfos, n);
 
 	/* for all unnamed integer, do an addition */
-	if (separator != NULL)
-	{
+
 	while (s < n)
 	{
 		/* Extraction of the next integer */
 		printf("%d", va_arg(parametersInfos, int));
 		s++;
-		if (s != n)
+		if (s != n && separator != NULL)
 			printf("%s", separator);
+
 	}
 	printf("\n");
-	}
 	/* Release va_list resources */
 	va_end(parametersInfos);
 }
