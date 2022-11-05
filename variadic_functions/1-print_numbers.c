@@ -19,6 +19,8 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 	va_start(parametersInfos, n);
 
 	/* for all unnamed integer, do an addition */
+	if (separator != NULL)
+	{
 	while (s < n)
 	{
 		/* Extraction of the next integer */
@@ -28,6 +30,7 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 			printf("%s", separator);
 	}
 	printf("\n");
+	}
 	/* Release va_list resources */
 	va_end(parametersInfos);
 }
