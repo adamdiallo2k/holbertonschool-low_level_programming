@@ -21,14 +21,11 @@ int (*get_op_func(char *s))(int a, int b)
 		{"%", op_mod},
 		{NULL, NULL}
 	};
-/*	if (strcmp( s, "+") != 0 && strcmp( s, "-") != 0 && strcmp( s, "*") != 0 && strcmp( s, "/") != 0 && strcmp( s, "%") != 0)
-                      return (NULL);
-*/	
 
-    	while (i < 5)
-    	{
+	while (i < 5)
+	{
 		if (ops[i].op[0] == s[0])
-			return ops[i].f;
+			return (ops[i].f);
 		i++;
 	}
 	return (NULL);
