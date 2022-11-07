@@ -14,9 +14,9 @@ int main(int argc, char *argv[])
 {
 	int (*r)(int a, int b);
 
-	if (argc > 4)
+	if (argc != 4 || strcmp(argv[3], ""))
 	{
-		printf("Error 98 \n");
+		printf("Error\n");
 		exit(98);
 	}
 
@@ -24,13 +24,13 @@ int main(int argc, char *argv[])
 			strcmp(argv[2], "/") != 0 && strcmp(argv[2], "*")
 			!= 0 && strcmp(argv[2], "%") != 0)
 	{
-		printf("Error 99 \n");
+		printf("Error\n");
 		exit(99);
 	}
 	if ((strcmp(argv[2], "%") == 0 || strcmp(argv[2], "/")
 				== 0) && (argv[3] == 0))
 	{
-		printf("Error 100 \n");
+		printf("Error\n");
 		exit(100);
 	}
 
