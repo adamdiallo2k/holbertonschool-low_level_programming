@@ -14,7 +14,7 @@ int main(int argc, char *argv[])
 {
 	int (*r)(int a, int b);
 
-	if (argc != 4 || strcmp(argv[3], ""))
+	if (argc != 4)
 	{
 		printf("Error\n");
 		exit(98);
