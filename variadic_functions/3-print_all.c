@@ -15,8 +15,12 @@ void print_chare(va_list c)
 {
 	char *r = va_arg(c, char *);
 
-	if (r != NULL)
-		printf("%s", r);
+	if (r == NULL)
+	{
+		printf("(nil)");
+		exit(10);
+	}
+	print("%s", p);
 }
 
 /**
