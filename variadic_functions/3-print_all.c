@@ -17,7 +17,7 @@ void print_chare(va_list c)
 
 	if (r == NULL)
 		r = "(nil)";
-	
+
 	printf("%s", r);
 }
 
