@@ -84,7 +84,7 @@ void print_all(const char * const format, ...)
 
 	va_start(parametersInfos, format);
 
-	while (format[i] && format[i] != '\0')
+	while (format && format[i] != '\0')
 	{
 		while (fut[y].fu)
 		{
