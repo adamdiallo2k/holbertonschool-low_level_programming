@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "3-calc.h"
+#include "variadic_functions.h"
 #include <stdlib.h>
 
 /**
@@ -12,9 +12,9 @@
 
 void print_chare(va_list c)
 {
-	char *r = var_arg(p, char *)
+	char *r = va_arg(c, char *);
 
-	printf("%d", r);
+	printf("%s", r);
 }
 
 /**
@@ -25,7 +25,7 @@ void print_chare(va_list c)
 */
 void print_float(va_list f)
 {
-	float p = va_arg(f, float);
+	float p = va_arg(f, double);
 
 	printf("%f", p);
 }
@@ -36,9 +36,9 @@ void print_float(va_list f)
 * Return: nothing
 * @c: va_list parameter
 */
-int print_char(va_list c)
+void print_char(va_list c)
 {
-	int p = var_arg(c, int)
+	int p = va_arg(c, int);
 
 	printf("%c", p);
 }
@@ -49,9 +49,9 @@ int print_char(va_list c)
 * Return: nothing
 * @i: int parameter
 */
-int print_int(int i)
+void print_int(va_list i)
 {
-	int p = var_arg(i, int)
+	int p = va_arg(i, int);
 
 	printf("%i", p);
 }
