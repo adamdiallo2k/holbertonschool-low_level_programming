@@ -3,18 +3,22 @@
 #include <stdlib.h>
 #include "variadic_functions.h"
 
+
 /**
-* print_all - Entry point
-* Description: 'returns the sum of all its parameters.'
+* print_chare - Entry point
+* Description: 'return difference'
 * Return: nothing
-* @format: char const parameter
+* @c: va_list parameter
 */
 
 void print_chare(va_list c)
 {
 	char *r = va_arg(c, char *);
 
-	printf("%s", r);
+	if (r == NULL)
+		printf("(nil)");
+	else
+		printf("%s", r);
 }
 
 /**
@@ -55,6 +59,14 @@ void print_int(va_list i)
 
 	printf("%i", p);
 }
+
+/**
+  * print_all - Entry point
+  * Description: 'return division'
+  * Return: nothing
+  * @format: const parameter
+  */
+
 void print_all(const char * const format, ...)
 {
 
