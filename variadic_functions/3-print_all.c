@@ -16,7 +16,7 @@ void print_chare(va_list c)
 	char *r = va_arg(c, char *);
 
 	if (r != NULL)
-		printf("%s",c);
+		printf("%s", r);
 }
 
 /**
