@@ -20,7 +20,7 @@ void print_chare(va_list c)
 		printf("(nil)");
 		exit(10);
 	}
-	printf("%s", p);
+	printf("%s", r);
 }
 
 /**
