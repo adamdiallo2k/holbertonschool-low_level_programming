@@ -4,7 +4,7 @@
 #include "variadic_functions.h"
 
 /**
-* print_all- Entry point
+* print_all - Entry point
 * Description: 'returns the sum of all its parameters.'
 * Return: nothing
 * @format: char const parameter
