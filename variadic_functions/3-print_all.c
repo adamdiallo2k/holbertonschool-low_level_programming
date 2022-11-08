@@ -86,7 +86,7 @@ void print_all(const char * const format, ...)
 	{
 		while (fut[y].fu != NULL)
 		{
-			if (*fut[y].fu ==  format[i])
+			if (*fut[y].fu ==  format[i] && format != NULL)
 			{
 				printf("%s", sep);
 				fut[y].f(parametersInfos);
