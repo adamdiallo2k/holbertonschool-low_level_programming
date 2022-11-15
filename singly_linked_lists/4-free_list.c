@@ -12,7 +12,7 @@
 
 void free_list(list_t *head)
 {
-	if (head && head->str)
+	if (head)
 	{
 	while (!head)
 	{
