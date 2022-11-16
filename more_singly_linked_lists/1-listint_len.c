@@ -4,8 +4,8 @@
 #include "lists.h"
 
 /**
-* print_listint - Entry point
-* Description: 'returns the number of nodes'
+* listint_len - Entry point
+* Description: 'returns the len of h'
 * Return: size_t
 * @h: list_t  parameter
 */
