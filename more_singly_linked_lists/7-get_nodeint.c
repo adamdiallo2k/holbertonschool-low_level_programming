@@ -5,7 +5,7 @@
 
 /**
 * get_nodeint_at_index - Entry point
-* Description: 'returns the len of h'
+* Description: 'returns the number of nth node'
 * Return: size_t
 * @head: list_t  parameter
 * @index: int parameter
@@ -15,7 +15,7 @@ listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
 {
 	listint_t *node = head;
 
-	if (!head)
+	if (!node)
 		return (0);
 
 	while (!node || index != 0)
