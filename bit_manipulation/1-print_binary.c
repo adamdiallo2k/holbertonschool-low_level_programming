@@ -18,21 +18,6 @@ unsigned long int power(unsigned long int base, unsigned long int a)
 		return (1);
 }
 
-void printDigit(unsigned long int N)
-{
-    int r;
-
-   
-    if (N == 0) {
-        return;
-    }
-	
-    r = N % 10;
-
-    printDigit(N / 10);
-
-    _putchar(r + '0');
-}
 /**
 * binary_to_uint - Entry point
 * Description: 'converts a binary number to an unsigned int..'
@@ -61,6 +46,6 @@ void print_binary(unsigned long int n)
 	if (result == 0)
 		_putchar(0 + '0');
 	else
-		printDigit(result);
+		printf("%li",result);
 
 }
