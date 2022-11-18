@@ -14,13 +14,13 @@
 int set_bit(unsigned long int *n, unsigned int index)
 {
 	unsigned int bitStatus;
-
+	
+	if (index >= 2000)
+                return (-1);
 	bitStatus = (1 << (int) index);
 
 	*n |= bitStatus;
 
-	if (index >= 2000)
-		return (-1);
 
-	return (bitStatus);
+	return (1);
 }
