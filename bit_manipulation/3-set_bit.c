@@ -19,7 +19,7 @@ int set_bit(unsigned long int *n, unsigned int index)
 
 	*n |= bitStatus;
 
-	if (index > 31)
+	if (index >= 2000)
 		return (-1);
 
 	return (bitStatus);
