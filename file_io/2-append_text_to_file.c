@@ -7,7 +7,7 @@
 #include <string.h>
 
 /**
-* create_file - Entry point
+*  append_text_to_file - Entry point
 * Description: 'read a text file and print it'
 * Return: ssize_t
 * @filename: char parameter
