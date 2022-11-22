@@ -31,7 +31,7 @@ int create_file(const char *filename, char *text_content)
 		printf("file path");
 		return (-1);
 	}
-	write(fd, text_contnt, strlen(text_content));
+	write(fd, text_content, strlen(text_content));
 
 	close(fd);
 
