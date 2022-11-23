@@ -22,7 +22,7 @@ int main(int ac,char **av)
 
 	if (fdsource == -1)
 	{
-		dprintf(STDERR_FILENO, "Error: Can't read from %s", av[1]);
+		dprintf(STDERR_FILENO, "Error: 1 Can't read from %s", av[1]);
 		exit(98);
 	}
 	fddest = open(av[2], O_WRONLY, O_CREAT, O_TRUNC, 0664);
@@ -34,7 +34,7 @@ int main(int ac,char **av)
 
 	if (size == -1)
 	{
-		dprintf(STDERR_FILENO, "Error: Can't read from file%s", av[1]);
+		dprintf(STDERR_FILENO, "Error: 2 Can't read from file%s", av[1]);
 		exit(98);
 	}
 	/** on met size car il va s'arréter dés qu'il va trouver un null*/
@@ -42,16 +42,17 @@ int main(int ac,char **av)
 
 	if (wr == -1)
 	{
-		dprintf(STDERR_FILENO, "Error: Can't read from file%s", av[1]);
+		dprintf(STDERR_FILENO, "Error: 3 Can't read from file%s", av[1]);
 		exit(98);
 	}
 	}
 
 	if (close(fddest) == -1)
+	{
+		dprintf(STDERR_FILENO, "Error: 4 Can't read from file%s", av[1]);
 		exit(100);
-
+	}
 	if (close(fdsource) == -1)
 		exit(100);
-
 	return (ac);
 }
