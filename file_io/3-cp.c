@@ -20,6 +20,8 @@ int main(int ac,char **av)
 
 	fdsource = open(av[1], O_RDONLY);
 
+	if (ac != 3)
+		exit(97);
 	if (fdsource == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: 1 Can't read from %s", av[1]);
@@ -43,15 +45,12 @@ int main(int ac,char **av)
 	if (wr == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: 3 Can't read from file%s", av[1]);
-		exit(98);
+		exit(0);
 	}
 	}
 
 	if (close(fddest) == -1)
-	{
-		dprintf(STDERR_FILENO, "Error: 4 Can't read from file%s", av[1]);
 		exit(100);
-	}
 	if (close(fdsource) == -1)
 		exit(100);
 	return (ac);
