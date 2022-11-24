@@ -19,7 +19,7 @@ if (h == NULL)
 	return (NULL);
 
 h->size = size;
-h->array = malloc(sizeof(hash_node_t *));
+h->array = malloc(sizeof(hash_node_t *) * size);
 
 return (h);
 }
