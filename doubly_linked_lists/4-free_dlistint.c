@@ -4,7 +4,7 @@
 #include "lists.h"
 
 /**
- * free_listint - Entry point
+ * free_dlistint - Entry point
  * Description: 'Write a function that frees a list_t list.'
  * Return: nothing
  * @head: listint_t  parameter
