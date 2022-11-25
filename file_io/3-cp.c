@@ -20,7 +20,6 @@ int main(int ac, char **av)
 	char buf[1024];
 
 	fdsource = open(av[1], O_RDONLY);
-
 	if (ac != 3)
 	{
 		dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n");
@@ -32,27 +31,21 @@ int main(int ac, char **av)
 		exit(98);
 	}
 	fddest = open(av[2], O_WRONLY, O_CREAT, O_TRUNC, 0664);
-
 	while (size > 0)
 	{
-	/** lire du premier charactere jusqu'a la size*/
 	size = read(fdsource, buf, 1024);
-
 	if (size == -1)
 	{
-		dprintf(STDERR_FILENO, "Error: Can't read from file%s\n", av[1]);
+		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", av[1]);
 		exit(98);
 	}
-	/** on met size car il va s'arréter dés qu'il va trouver un null*/
 	wr = write(fddest, buf, size);
-
 	if (wr == -1)
 	{
-		dprintf(STDERR_FILENO, "Error: Can't read from file%s\n", av[1]);
+		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", av[1]);
 		exit(0);
 	}
 	}
-
 	if (close(fddest) == -1)
 	{
 		dprintf(STDERR_FILENO,"Error: Can't close fd %i\n",fddest);
