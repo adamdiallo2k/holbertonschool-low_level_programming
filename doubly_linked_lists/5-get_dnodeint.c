@@ -5,7 +5,7 @@
 
 /**
 * get_dnodeint_at_index - Entry point
-* Description: 'returns the number of nth node'
+* Description: 'returnss the number of nth node'
 * Return: size_t
 * @head: list_t  parameter
 * @index: int parameter
